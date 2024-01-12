@@ -40,7 +40,7 @@ img {
 .header {
     border-bottom: 1px solid #E7E9FC;
     align-items: center;
-    box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container-header {
@@ -129,13 +129,13 @@ img {
 .address-list-item {
     color: #2e2f42;
     font-size: 16px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-item {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-item:hover {
     color: #404bbf;
@@ -318,6 +318,7 @@ img {
 .team-soc-item {
     width: 40px;
     height: 40px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-soc-link {
     width: 100%;
@@ -328,13 +329,14 @@ img {
     align-items: center;
     justify-content: center;
 }
-.team-soc-icon {
-    fill: #F4F4FD;
-}
+
 .team-soc-link:hover .team-soc-link:focus {
     background-color: #404bbf;
 }
 
+.team-soc-icon {
+    fill: #F4F4FD;
+}
 /*-----------------------------------*/
 /*------------portfolio--------------*/
 .portfolio {
@@ -361,11 +363,12 @@ img {
 .portfolio-list-item {
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-list-item:hover {
     transform: translateY(0%);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}   
+
+.portfolio-list-item:hover p {
+    transform: translateY(0%);
+    transition: box-shadow 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-wrap {
     position: relative;
@@ -474,9 +477,8 @@ img {
     background-color: #4d5ae5;
     border-radius: 50%;
     padding: 8px;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-soc-link{
+.footer-soc-link {
     width: 100%;
     height: 100%;
     background-color: #4d5ae5;
@@ -484,7 +486,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-soc-link:hover .footer-soc-link:focus {
     background-color: #31d0aa;
 }
