@@ -245,9 +245,6 @@ img {
     justify-content: center;
     margin-bottom: 8px;
 }
-.features-icon {
-    margin: auto;
-}
 .features-text {
     font-size: 16px;
     line-height: 1.5;
@@ -439,7 +436,6 @@ img {
 }
 .footer-container {
     display: flex;
-    gap: 120px;
     align-items: baseline;
 }
 .footer-first-container {
